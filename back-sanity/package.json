@@ -1,0 +1,32 @@
+{
+  "name": "back-sanity",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "HTHmedia <develop@hthmedia.nl>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "sanity-start": "npm run deploy-graphql && npm run sanity-start",
+    "start": "sanity start",
+    "build": "sanity build",
+    "deploy-graphql": "sanity graphql deploy production"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.6.0",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.6.1",
+    "@sanity/default-layout": "^2.6.0",
+    "@sanity/default-login": "^2.2.6",
+    "@sanity/desk-tool": "^2.6.1",
+    "@sanity/vision": "^2.2.6",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {}
+}
