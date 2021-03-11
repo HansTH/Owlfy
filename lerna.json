@@ -1,0 +1,4 @@
+{
+  "packages": ["front-gatsby", "back-sanity"],
+  "version": "1.0.0"
+}
