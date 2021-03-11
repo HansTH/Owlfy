@@ -57,7 +57,9 @@ export default function Contact() {
           </div>
           <div className='submit'>
             <p>* Verplichte velden</p>
-            <button>Verstuur</button>
+            <button>
+              Verstuur<p>uw bericht</p>
+            </button>
           </div>
         </form>
       </Container>
@@ -112,10 +114,22 @@ const ContactStyles = styled.div`
     font-family: 'Roboto500';
     font-size: 1.6rem;
 
+    p {
+      color: var(--white);
+      opacity: 0.5;
+      font-size: 1.3rem;
+      display: block;
+      margin-top: 0;
+    }
+
     &:hover,
     :focus {
       background-color: var(--white);
       color: var(--green);
+
+      p {
+        color: var(--green);
+      }
     }
   }
 

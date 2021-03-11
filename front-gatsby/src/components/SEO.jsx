@@ -26,6 +26,12 @@ export default function SEO({ children, seo }) {
       {/* Fav Icons */}
       <link rel='icon' type='image/svg+xml' href='/owlfy-icon.png' />
       <link rel='alternate icon' href='/owlfy-icon.png' /> {/* fallback */}
+      <link
+        rel='apple-touch-icon'
+        type='image/png'
+        sizes='100x100'
+        href='/owlfy-icon.png'
+      />
       {/* Meta Tags */}
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta charSet='utf-8' />
