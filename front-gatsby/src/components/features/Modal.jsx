@@ -23,7 +23,9 @@ export default function Modal({
         handleToggleModalOpen={handleToggleModalOpen}
       />
       <ModalStyles toggleModalOpen={toggleModalOpen}>
-        <button onClick={handleToggleModalOpen}>+</button>
+        <button onClick={handleToggleModalOpen}>
+          <p>+</p>
+        </button>
         {modalContent && (
           <>
             <h4 style={{ color: 'var(--green' }}>
@@ -101,11 +103,14 @@ const ModalStyles = styled.div`
     border-radius: 20px;
     border: none;
     background-color: var(--green);
-    color: var(--white);
     outline: none;
     cursor: pointer;
-    font-size: 3.5rem;
     transform: rotate(45deg);
+
+    p {
+      font-size: 3.5rem;
+      color: var(--white);
+    }
 
     &:hover,
     :focus {

@@ -45,6 +45,7 @@ const MobileMenuStyles = styled.div`
   justify-content: center;
 
   .nav-link {
+    font-size: 2.5rem;
     color: var(--white);
     padding: 2rem 0;
 

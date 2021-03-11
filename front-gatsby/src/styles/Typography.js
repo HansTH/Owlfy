@@ -51,6 +51,7 @@ const Typography = createGlobalStyle`
   h1,h2,h3{
     font-family:'VollkornBlack';
     line-height:1;
+    letter-spacing: -0.5px;
   }
 
 

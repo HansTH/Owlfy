@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Navbar from './navbar/Navbar';
 import GlobalStyles from '../../styles/GlobalStyles';
 import Typography from '../../styles/Typography';
+import 'normalize.css';
 
 export default function Layout({ children, navLinks }) {
   const data = useStaticQuery(graphql`

@@ -44,10 +44,8 @@ export default function Footer({ company }) {
         </div>
         <div className='copyright'>
           <Link to='/'>
-            <p>
-              <Image mainImage={image} width={100} />
-              .com &copy; 2021
-            </p>
+            <Image mainImage={image} width={100} />
+            <p>.com &copy; 2021</p>
           </Link>
         </div>
       </Container>
@@ -141,17 +139,20 @@ const FooterStyles = styled.footer`
     }
   }
 
-  .copyright {
+  .copyright a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     p {
-      display: flex;
-      justify-content: center;
       font-size: 2rem;
       font-family: 'Roboto500';
-      img {
-        width: 60px;
-        object-fit: contain;
-        margin: 0;
-      }
+    }
+
+    img {
+      width: 60px;
+      object-fit: contain;
+      margin: 0;
     }
   }
 
