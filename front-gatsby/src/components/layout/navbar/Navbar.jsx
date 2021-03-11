@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import SocialLinks from '../../socialMedia/SocialLinks';
 import { breakpoint } from '../../../styles/breakpoints';
 import Menubutton from './MenuButton';
-// import MobileMenu from './MobileMenu';
+import MobileMenu from './MobileMenu';
 
 export default function Navbar({ company, navLinks }) {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -16,12 +16,12 @@ export default function Navbar({ company, navLinks }) {
 
   return (
     <>
-      {/* <MobileMenu
+      <MobileMenu
         isOpen={isMenuOpen}
-        // navLinks={navLinks}
+        navLinks={navLinks}
         toggleMenu={toggleMenu}
         socialLinks={company.socialMediaLinks}
-      /> */}
+      />
       <NavbarStyles>
         <div className='navbar'>
           <NavLogo logo={company.info.image} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import SocialLinks from '../../socialMedia/SocialLinks';
+import CTA from '../../CTA';
 
 export default function MobileMenu({
   isOpen,
@@ -11,16 +11,15 @@ export default function MobileMenu({
 }) {
   return (
     <MobileMenuStyles isOpen={isOpen}>
-      {navLinks.map((link, index) => (
-        <Link
-          key={index}
-          className='nav-link'
-          to={link.route}
-          onClick={toggleMenu}
-        >
-          {link.title}
-        </Link>
-      ))}
+      {navLinks &&
+        navLinks.map((link, index) => (
+          <CTA
+            key={index}
+            cta={link}
+            handleClick={toggleMenu}
+            className='nav-link'
+          />
+        ))}
       <div className='social-links'>
         <SocialLinks
           links={socialLinks}
@@ -45,7 +44,7 @@ const MobileMenuStyles = styled.div`
   align-items: center;
   justify-content: center;
 
-  a {
+  .nav-link {
     color: var(--white);
     padding: 2rem 0;
 

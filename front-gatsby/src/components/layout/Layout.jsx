@@ -27,12 +27,12 @@ export default function Layout({ children, navLinks }) {
   `);
 
   return (
-    <div>
+    <>
       <GlobalStyles />
       <Typography />
       <Navbar company={data.company} navLinks={navLinks} />
       {children}
       <Footer company={data.company} />
-    </div>
+    </>
   );
 }

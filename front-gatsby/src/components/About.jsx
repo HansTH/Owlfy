@@ -57,10 +57,7 @@ const AboutStyles = styled.div`
   }
 
   .about-text {
-    display: flex;
-    flex-direction: column;
     width: 52%;
-    display: inline;
 
     a {
       background-color: var(--purple);
