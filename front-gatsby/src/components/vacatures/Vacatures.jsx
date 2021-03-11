@@ -64,7 +64,7 @@ export default function Vacatures({ heading, body, vacature }) {
 
 const PortableTextStyles = styled.div`
   p {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.8rem;
 
     &:not(:first-child) {
@@ -75,7 +75,7 @@ const PortableTextStyles = styled.div`
 
 const VacaturesStyles = styled.div`
   text-align: center;
-  padding: 8rem 0;
+  padding: 10rem 0;
 
   .slick-list {
     padding: 3rem 2rem !important;
@@ -92,8 +92,6 @@ const VacaturesStyles = styled.div`
 
   /* BREAKPOINTS */
   @media ${breakpoint.md} {
-    margin-bottom: 5rem;
-
     .slick-prev,
     .slick-next {
       display: none !important;

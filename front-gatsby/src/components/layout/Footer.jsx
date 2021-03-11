@@ -60,7 +60,7 @@ const FooterStyles = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 5rem 0;
+    padding: 5rem 0;
   }
 
   h4 {
@@ -143,6 +143,7 @@ const FooterStyles = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 
     p {
       font-size: 2rem;
@@ -161,7 +162,6 @@ const FooterStyles = styled.footer`
     .footer {
       align-items: flex-start;
       flex-wrap: wrap;
-      margin: 2rem 0;
     }
 
     .contact {
@@ -176,7 +176,6 @@ const FooterStyles = styled.footer`
 
     .newsletter {
       text-align: right;
-      /* align-items: center; */
       width: 50%;
       order: 2;
 

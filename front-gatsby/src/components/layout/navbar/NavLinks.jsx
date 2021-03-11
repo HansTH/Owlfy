@@ -18,7 +18,7 @@ export default function NavLinks({ navLinks }) {
 const NavLinkStyles = styled.div`
   .nav-link:not(:last-child) {
     color: var(--purple);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding-right: 1rem;
 
     &:hover,

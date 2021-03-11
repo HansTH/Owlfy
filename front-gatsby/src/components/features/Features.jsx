@@ -4,7 +4,6 @@ import { Container } from '../../styles/Container';
 import styled from 'styled-components';
 import Feature from './Feature';
 import PortableText from '../PortableText';
-import { breakpoint } from '../../styles/breakpoints';
 
 export default function Features({ heading, body, feature }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -43,7 +42,7 @@ export default function Features({ heading, body, feature }) {
 
 const PortableTextStyles = styled.div`
   p {
-    margin-top: 1rem;
+    margin-top: 2rem;
     color: var(--white);
     font-size: 1.8rem;
 
@@ -60,7 +59,7 @@ const PortableTextStyles = styled.div`
 
 const FeaturesStyles = styled.div`
   text-align: center;
-  padding: 8rem 0;
+  padding: 10rem 0;
   position: relative;
 
   h1 {
@@ -81,14 +80,5 @@ const FeaturesStyles = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  /* BREAKPOINTS */
-  @media ${breakpoint.md} {
-    margin-bottom: 5rem;
-
-    .features {
-      margin-top: 2rem;
-    }
   }
 `;

@@ -35,7 +35,7 @@ export default function About({ heading, body, cta, image }) {
 
 const BodyStyles = styled.div`
   p {
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 1.8rem;
 
     &:not(:first-child) {
@@ -53,7 +53,7 @@ const AboutStyles = styled.div`
   .about {
     display: flex;
     align-items: center;
-    padding: 8rem 0;
+    padding: 13rem 0 8rem;
   }
 
   .about-text {
