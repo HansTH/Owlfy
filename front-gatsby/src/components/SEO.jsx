@@ -36,6 +36,10 @@ export default function SEO({ children, seo }) {
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta charSet='utf-8' />
       <meta name='description' content={metaDescription} />
+      <meta
+        name='keywords'
+        content='Owlfy, Employment Reinvented, Enschede, Zakelijk samenwerken opnieuw uitvinden, Startup, softwareoplossing'
+      />
       {/* Open Graph */}
       <meta
         property='og:image'
@@ -47,15 +51,14 @@ export default function SEO({ children, seo }) {
         key='ogtitle'
       />
       <meta
-        property='og:site_name'
-        content={metaDescription}
-        key='ogsitename'
-      />
-      <meta
         property='og:description'
         content={metaDescription}
         key='ogdescription'
       />
+      <meta property='og:type' content='website' key='ogtype' />
+      <meta property='og:url' content='https://www.owlfy.com/' key='ogurl' />
+      <meta property='og:locale' content='nl_NL' key='oglocale' />
+      <meta property='og:site_name' content='Owlfy' key='ogsitename' />
       {children}
     </Helmet>
   );
